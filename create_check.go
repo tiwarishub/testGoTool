@@ -7,7 +7,7 @@ import (
 	"os"
 	"time"
 
-	"storagecache"
+	"github.com/Azure/azure-sdk-for-go/services/storagecache/mgmt/2020-03-01/storagecache"
 
 	"github.com/Azure/go-autorest/autorest/azure/auth"
 )
