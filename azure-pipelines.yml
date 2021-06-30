@@ -26,7 +26,7 @@ stages:
         cd ../../..
         ls
         go env
-        cd go/src
+        cd /home/vsts/go
         ls
         ln -s github.com/Azure/azure-sdk-for-go/services/storagecache/mgmt/2020-03-01/storagecache
         cd storagecache
