@@ -14,8 +14,10 @@ stages:
     - task: Go@0
       inputs:
         command: 'get'
-        arguments: '-d -v github.com/Azure/azure-sdk-for-go/services/storagecache/mgmt/2021-03-01/storagecache/'
+        arguments: '-d -v github.com/Azure/azure-sdk-for-go/...'
         workingDirectory: '$(System.DefaultWorkingDirectory)'
+      env:
+        GO111MODULE: "on"
     - script: |
         set -ex
         # NOTE: API version for Go SDK hardcoded to 2020-03-01.
