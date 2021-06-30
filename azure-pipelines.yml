@@ -25,6 +25,7 @@ stages:
         pwd
         cd ../../..
         ls
+        echo $GOPATH
         cd go/src
         ls
         ln -s github.com/Azure/azure-sdk-for-go/services/storagecache/mgmt/2020-03-01/storagecache
