@@ -14,7 +14,7 @@ stages:
     - task: Go@0
       inputs:
         command: 'get'
-        arguments: '-d -v github.com/Azure/azure-sdk-for-go/...'
+        arguments: '-d -v github.com/Azure/azure-sdk-for-go/services/storagecache/mgmt/2021-03-01/storagecache/'
         workingDirectory: '$(System.DefaultWorkingDirectory)'
     - script: |
         set -ex
