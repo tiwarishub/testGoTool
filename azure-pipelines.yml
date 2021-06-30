@@ -16,8 +16,6 @@ stages:
         command: 'get'
         arguments: '-d -v github.com/Azure/azure-sdk-for-go/services/storagecache/mgmt/2020-03-01/storagecache"'
         workingDirectory: '$(System.DefaultWorkingDirectory)'
-      env:
-        GO111MODULE: "on"
     - script: |
         go build
       displayName: 'TEST: Run the GO SDK tests'
